@@ -29,3 +29,7 @@ Quando a fala mantida disser algo equivalente a "quero que apareca aqui o logo d
 - Marcas: `public/brands`
 
 Os SVGs ChatGPT/OpenAI incluidos sao fallbacks locais do projeto e podem ser substituidos pelos assets oficiais usados na sua producao.
+
+## Remotion: instalacao, preview e render
+
+Veja [docs/REMOTION.md](docs/REMOTION.md) para executar o Studio, validar o plano e renderizar no Windows ou Linux. Use `npm ci` para instalar as versoes registradas em `package-lock.json`.
