@@ -44,7 +44,7 @@ python -c "import av, faster_whisper; print('PyAV:', av.__version__); print('fas
 if errorlevel 1 goto :error
 
 echo [4/5] Instalando dependencias Remotion...
-call npm install
+call npm ci
 if errorlevel 1 goto :error
 
 echo [5/5] Instalando skills oficiais do Remotion para agentes...

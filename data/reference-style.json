@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "method": "ffmpeg scene score > 0.3 at width 288; candidates, not confirmed editorial cuts",
+  "references": [
+    {
+      "file": "Download.mp4",
+      "sha256": "90131211eb807edb6afe1c77cc25862dfb72612ad41c2f6836296f5a29b930f6",
+      "duration": 147.966667,
+      "width": 576,
+      "height": 1024,
+      "sceneCutCandidates": [],
+      "candidateCutsPerMinute": 0.0,
+      "averageCandidateShotSeconds": 147.97
+    }
+  ],
+  "unmeasured": [
+    "captionPosition",
+    "captionSize",
+    "captionDuration",
+    "visualDensity",
+    "zoomFrequency",
+    "zoomIntensity",
+    "motionFrequency",
+    "brollPresence",
+    "transitionStyle"
+  ],
+  "editorialUse": "Director/Editor devem confrontar estas medidas com a referência e o preset; não copiar identidade nem inferir métricas ausentes."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "narrado",
+  "sourceAudio": true,
+  "captions": true,
+  "maxSeconds": 60,
+  "maxCaptionWords": 10,
+  "maxCaptionHighlights": 2,
+  "maxVisualGapSeconds": 4,
+  "notes": "O áudio do bruto deve conter a narração. Cobrir a timeline com imagens, B-roll ou graphics; não gera TTS."
+}

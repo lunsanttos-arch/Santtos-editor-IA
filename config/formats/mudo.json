@@ -1,0 +1,10 @@
+{
+  "name": "mudo",
+  "sourceAudio": false,
+  "captions": false,
+  "maxSeconds": 60,
+  "maxCaptionWords": 10,
+  "maxCaptionHighlights": 2,
+  "maxVisualGapSeconds": null,
+  "notes": "Vídeo sem áudio do bruto. Texto e imagens precisam sustentar a narrativa; música não é adicionada automaticamente."
+}

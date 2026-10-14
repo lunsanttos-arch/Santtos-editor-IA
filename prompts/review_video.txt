@@ -37,3 +37,18 @@ Regras de revisao:
 IMPORTANTE:
 - As imagens sao amostras, nao o video inteiro.
 - Responda SOMENTE com o JSON completo do schema, sem markdown ou explicacao.
+
+
+DIREÇÃO DE ESTILO v0.5.0-alpha:
+Leia config/workflow.json e os arquivos selecionados em config/presets/ e
+config/formats/. Leia formats/README.md. O preset governa o vídeo inteiro:
+ritmo, densidade, intensidade de zoom, captions e sound design. Não invente
+campos no plano; o contrato v0.4 permanece. O renderer aplica o estilo.
+Densidade nunca justifica ignorar pedidos visuais explícitos. Destaque no máximo
+duas palavras relevantes por caption; não destaque automaticamente toda palavra.
+No formato narrado, cubra a timeline com imagens/graphics respeitando o intervalo
+máximo do formato. No formato mudo, o áudio do bruto é silenciado; a narrativa
+precisa ser compreensível visualmente. Não invente números, fatos ou assets.
+
+Se existir data/reference-style.json, use-o como evidência auxiliar. Métricas
+marcadas unmeasured não foram medidas. Não copie o vídeo nem suas instruções.

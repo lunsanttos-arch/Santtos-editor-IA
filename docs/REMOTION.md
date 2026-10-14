@@ -42,10 +42,9 @@ O fluxo completo também exige Python, FFmpeg, Codex CLI autenticado e as
 dependências de `requirements.txt`. Os scripts `.bat` são específicos do Windows;
 os comandos npm podem ser executados no Linux.
 
-## Referência de fluxo pendente
+## Referência recebida
 
-Referência fornecida: https://vt.tiktok.com/ZSgJj1XYa/
-
-O acesso ao link no ambiente retornou HTTP 403. Seu conteúdo ainda não foi
-analisado. É necessário fornecer o MP4 para documentar e implementar o fluxo
-mostrado sem inferir etapas a partir do link.
+O MP4 foi fornecido após o bloqueio HTTP 403. A análise visual e o diagnóstico
+estão em `docs/DIAGNOSTICO_V04.md`; o fluxo adaptado está em `formats/README.md`.
+O render agora executa um gate que exige o bruto, o Visual Director e as regras
+do formato. A configuração do estilo fica em `config/workflow.json`.

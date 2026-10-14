@@ -20,3 +20,15 @@ Regras:
 5. Para gesture-target, o elemento deve aparecer na regiao indicada pelo gesto, sem cobrir a mao ou o rosto.
 6. Nao resolva a falha colocando um headline generico. O visual precisa representar o subject pedido.
 7. Responda SOMENTE com JSON completo do edit-plan schema.
+
+
+DIREÇÃO DE ESTILO v0.5.0-alpha:
+Leia config/workflow.json e os arquivos selecionados em config/presets/ e
+config/formats/. Leia formats/README.md. O preset governa o vídeo inteiro:
+ritmo, densidade, intensidade de zoom, captions e sound design. Não invente
+campos no plano; o contrato v0.4 permanece. O renderer aplica o estilo.
+Densidade nunca justifica ignorar pedidos visuais explícitos. Destaque no máximo
+duas palavras relevantes por caption; não destaque automaticamente toda palavra.
+No formato narrado, cubra a timeline com imagens/graphics respeitando o intervalo
+máximo do formato. No formato mudo, o áudio do bruto é silenciado; a narrativa
+precisa ser compreensível visualmente. Não invente números, fatos ou assets.

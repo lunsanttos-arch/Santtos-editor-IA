@@ -1,0 +1,18 @@
+{
+  "name": "santtos-journal",
+  "pace": "medium",
+  "captionStyle": "clean",
+  "motionDensity": 0.35,
+  "zoomIntensity": 0.05,
+  "soundDesign": "off",
+  "visualDepth": "medium",
+  "transitionStyle": "invisible",
+  "accent": "#a5c8ff",
+  "fontFamily": "Arial, Helvetica, sans-serif",
+  "captionSize": 58,
+  "captionBottom": 245,
+  "maxHighlights": 2,
+  "minSoundGap": 1.8,
+  "soundVolume": 0.12,
+  "maxSimultaneousVisuals": 2
+}

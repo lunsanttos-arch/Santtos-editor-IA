@@ -47,10 +47,15 @@ export const smartCaptionCards = (words: TimelineWord[]) => {
   for (const word of words) {
     const previous = current[current.length - 1];
     const gap = previous ? word.outputStart - previous.outputEnd : 0;
-    const endsPhrase = previous ? /[.!?,;:]$/.test(previous.text.trim()) : false;
-    const tooLong = current.length >= 6;
-    const naturalBreak = current.length >= 3 && (gap > 0.3 || endsPhrase);
-    if (previous && (gap > 0.65 || tooLong || naturalBreak)) flush();
+    const endsPhrase = previous ? /[.!?;:]$/.test(previous.text.trim()) : false;
+    const commaBreak = previous ? /,$/.test(previous.text.trim()) && current.length >= 3 : false;
+    const textLength = current.map((w) => w.text.trim()).join(' ').length;
+    const readingWindow = previous && current.length ? previous.outputEnd - current[0].outputStart : 0;
+    // Prefer phrasing and reading time over a fixed word count. Avoid leaving a
+    // preposition/article dangling when a safety limit requires another card.
+    const dangling = previous ? /^(a|o|as|os|de|do|da|dos|das|em|no|na|nos|nas|para|com|um|uma|e|que)$/i.test(previous.text.trim()) : false;
+    const needsRoom = (textLength > 40 || readingWindow > 2.4) && !dangling;
+    if (previous && (gap > 0.65 || endsPhrase || commaBreak || (gap > 0.3 && !dangling) || needsRoom || textLength > 64)) flush();
     current.push(word);
   }
   flush();

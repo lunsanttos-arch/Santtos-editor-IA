@@ -5,3 +5,9 @@ public/input.mp4
 inbox/*
 !output/.gitkeep
 !inbox/.gitkeep
+
+__pycache__/
+*.pyc
+references/*.mp4
+references/*.mov
+references/*.webm

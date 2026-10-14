@@ -1,7 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0.."
-python scripts\validate_plan.py || goto :error
+call npm run check:edit || goto :error
 call npm run typecheck || goto :error
 call npm run render || goto :error
 echo.

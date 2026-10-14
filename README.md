@@ -1,4 +1,10 @@
-# SanTTos AI Editor v0.4 — Visual Director
+# SanTTos AI Editor v0.5.0-alpha
+
+Evolução incremental da v0.4: presets, formatos escritos, captions, câmera suave,
+sound cues e gate antes do render. Veja [o fluxo](formats/README.md) e
+[o diagnóstico](docs/DIAGNOSTICO_V04.md).
+
+## Base preservada: v0.4 — Visual Director
 
 A v0.4 adiciona uma camada de direcao visual antes da edicao.
 

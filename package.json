@@ -1,12 +1,17 @@
 {
   "name": "santtos-ai-editor",
-  "version": "0.4.0",
+  "version": "0.5.0-alpha",
   "private": true,
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts SanttosReel output/final.mp4 --codec=h264",
     "typecheck": "tsc --noEmit",
-    "render:review": "remotion render src/index.ts SanttosReel output/review/draft.mp4 --codec=h264 --scale=0.5 --crf=30 --overwrite"
+    "render:review": "remotion render src/index.ts SanttosReel output/review/draft.mp4 --codec=h264 --scale=0.5 --crf=30 --overwrite",
+    "check:edit": "node scripts/check-workflow.mjs",
+    "prerender": "node scripts/check-workflow.mjs --require-director --require-media",
+    "prerender:review": "node scripts/check-workflow.mjs --require-director --require-media",
+    "test": "node scripts/check-workflow.mjs --test && npm run test:timeline",
+    "test:timeline": "node --experimental-strip-types --test tests/timeline.test.ts"
   },
   "dependencies": {
     "@remotion/cli": "latest",

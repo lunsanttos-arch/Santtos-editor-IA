@@ -1,0 +1,18 @@
+{
+  "name": "santtos-cinematic",
+  "pace": "slow",
+  "captionStyle": "clean",
+  "motionDensity": 0.2,
+  "zoomIntensity": 0.04,
+  "soundDesign": "off",
+  "visualDepth": "high",
+  "transitionStyle": "invisible",
+  "accent": "#e8d9b5",
+  "fontFamily": "Arial, Helvetica, sans-serif",
+  "captionSize": 52,
+  "captionBottom": 245,
+  "maxHighlights": 2,
+  "minSoundGap": 1.8,
+  "soundVolume": 0.12,
+  "maxSimultaneousVisuals": 2
+}

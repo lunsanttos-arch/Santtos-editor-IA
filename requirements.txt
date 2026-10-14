@@ -1,3 +1,4 @@
 faster-whisper>=1.2.1
 av==18.0.0
 Pillow>=11
+jsonschema>=4.23,<5

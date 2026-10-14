@@ -1,0 +1,18 @@
+{
+  "name": "santtos-fast",
+  "pace": "fast",
+  "captionStyle": "kinetic",
+  "motionDensity": 0.65,
+  "zoomIntensity": 0.1,
+  "soundDesign": "subtle",
+  "visualDepth": "medium",
+  "transitionStyle": "invisible",
+  "accent": "#f6db69",
+  "fontFamily": "Arial, Helvetica, sans-serif",
+  "captionSize": 58,
+  "captionBottom": 245,
+  "maxHighlights": 2,
+  "minSoundGap": 1.2,
+  "soundVolume": 0.12,
+  "maxSimultaneousVisuals": 2
+}

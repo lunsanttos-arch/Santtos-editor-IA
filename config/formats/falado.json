@@ -1,0 +1,10 @@
+{
+  "name": "falado",
+  "sourceAudio": true,
+  "captions": true,
+  "maxSeconds": 60,
+  "maxCaptionWords": 10,
+  "maxCaptionHighlights": 2,
+  "maxVisualGapSeconds": null,
+  "notes": "Pessoa em quadro. Preserve fala, gesto e pedidos visuais."
+}

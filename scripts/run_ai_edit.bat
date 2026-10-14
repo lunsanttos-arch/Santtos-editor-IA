@@ -94,6 +94,7 @@ if errorlevel 2 (
 
 echo.
 echo [9/14] Renderizando draft leve...
+call npm run check:edit || goto :error
 if not exist "output\review" mkdir "output\review"
 call npm run render:review || goto :error
 
@@ -120,6 +121,11 @@ if errorlevel 1 (
   goto :openpreview
 )
 python scripts\validate_plan.py
+if errorlevel 1 (
+  copy /y data\edit-plan.first-pass.json data\edit-plan.json >nul
+  goto :openpreview
+)
+call npm run check:edit
 if errorlevel 1 (
   copy /y data\edit-plan.first-pass.json data\edit-plan.json >nul
   goto :openpreview
