@@ -1,0 +1,2230 @@
+{
+  "sourceSha256": "112526401a68e0d949ee8cbda4886265c20116509ce7cec0ce60b86b4a774eab",
+  "format": "mudo",
+  "sourceSegments": [
+    [
+      18.1,
+      22.9,
+      1,
+      1
+    ]
+  ],
+  "zoomIntensity": 0.08,
+  "method": "MediaPipe Hands 0.10.21, palm 0/5/9/13/17, nearest-hand association; LK forward/backward + RANSAC bridges <=0.45s; centered 5-frame smoothing; main-face avoidance and fade on loss",
+  "tracks": [
+    {
+      "visualAt": 0.3,
+      "asset": "chatgpt-mark.svg",
+      "points": [
+        {
+          "at": 0.266667,
+          "x": 45.6829,
+          "y": 68.9147,
+          "visibility": 1
+        },
+        {
+          "at": 0.3,
+          "x": 45.7398,
+          "y": 68.9164,
+          "visibility": 1
+        },
+        {
+          "at": 0.333333,
+          "x": 45.7586,
+          "y": 68.9789,
+          "visibility": 1
+        },
+        {
+          "at": 0.366667,
+          "x": 45.7394,
+          "y": 69.082,
+          "visibility": 1
+        },
+        {
+          "at": 0.4,
+          "x": 45.6787,
+          "y": 69.1025,
+          "visibility": 1
+        },
+        {
+          "at": 0.433333,
+          "x": 45.5283,
+          "y": 69.1143,
+          "visibility": 1
+        },
+        {
+          "at": 0.466667,
+          "x": 45.305,
+          "y": 69.1395,
+          "visibility": 1
+        },
+        {
+          "at": 0.5,
+          "x": 44.9781,
+          "y": 69.1669,
+          "visibility": 1
+        },
+        {
+          "at": 0.533333,
+          "x": 44.6554,
+          "y": 69.2269,
+          "visibility": 1
+        },
+        {
+          "at": 0.566667,
+          "x": 44.3499,
+          "y": 69.4067,
+          "visibility": 1
+        },
+        {
+          "at": 0.6,
+          "x": 44.0827,
+          "y": 69.6289,
+          "visibility": 1
+        },
+        {
+          "at": 0.633333,
+          "x": 43.9479,
+          "y": 69.8671,
+          "visibility": 1
+        },
+        {
+          "at": 0.666667,
+          "x": 44.1833,
+          "y": 69.9263,
+          "visibility": 1
+        },
+        {
+          "at": 0.7,
+          "x": 44.722,
+          "y": 69.7976,
+          "visibility": 1
+        },
+        {
+          "at": 0.733333,
+          "x": 45.5472,
+          "y": 69.579,
+          "visibility": 1
+        },
+        {
+          "at": 0.766667,
+          "x": 46.334,
+          "y": 69.3195,
+          "visibility": 1
+        },
+        {
+          "at": 0.8,
+          "x": 46.4715,
+          "y": 69.0505,
+          "visibility": 1
+        },
+        {
+          "at": 0.833333,
+          "x": 45.9594,
+          "y": 68.9678,
+          "visibility": 1
+        },
+        {
+          "at": 0.866667,
+          "x": 45.1635,
+          "y": 68.9552,
+          "visibility": 1
+        },
+        {
+          "at": 0.9,
+          "x": 43.8615,
+          "y": 69.0049,
+          "visibility": 1
+        },
+        {
+          "at": 0.933333,
+          "x": 42.5279,
+          "y": 69.1129,
+          "visibility": 1
+        },
+        {
+          "at": 0.966667,
+          "x": 41.8637,
+          "y": 69.189,
+          "visibility": 1
+        },
+        {
+          "at": 1.0,
+          "x": 41.7423,
+          "y": 69.1653,
+          "visibility": 1
+        },
+        {
+          "at": 1.033333,
+          "x": 41.8264,
+          "y": 69.2142,
+          "visibility": 1
+        },
+        {
+          "at": 1.066667,
+          "x": 42.2131,
+          "y": 69.1989,
+          "visibility": 1
+        },
+        {
+          "at": 1.1,
+          "x": 42.735,
+          "y": 69.2042,
+          "visibility": 1
+        },
+        {
+          "at": 1.133333,
+          "x": 43.1264,
+          "y": 69.2516,
+          "visibility": 1
+        },
+        {
+          "at": 1.166667,
+          "x": 43.4044,
+          "y": 69.3136,
+          "visibility": 1
+        },
+        {
+          "at": 1.2,
+          "x": 43.428,
+          "y": 69.3753,
+          "visibility": 1
+        },
+        {
+          "at": 1.233333,
+          "x": 43.2794,
+          "y": 69.5106,
+          "visibility": 1
+        },
+        {
+          "at": 1.266667,
+          "x": 42.9819,
+          "y": 69.563,
+          "visibility": 1
+        },
+        {
+          "at": 1.3,
+          "x": 42.5398,
+          "y": 69.5583,
+          "visibility": 1
+        },
+        {
+          "at": 1.333333,
+          "x": 41.7993,
+          "y": 69.5294,
+          "visibility": 1
+        },
+        {
+          "at": 1.366667,
+          "x": 40.6894,
+          "y": 69.5876,
+          "visibility": 1
+        },
+        {
+          "at": 1.4,
+          "x": 37.2079,
+          "y": 69.7343,
+          "visibility": 1
+        },
+        {
+          "at": 1.433333,
+          "x": 33.9348,
+          "y": 70.0026,
+          "visibility": 1
+        },
+        {
+          "at": 1.466667,
+          "x": 30.3119,
+          "y": 70.0722,
+          "visibility": 1
+        },
+        {
+          "at": 1.5,
+          "x": 26.4982,
+          "y": 69.86,
+          "visibility": 1
+        },
+        {
+          "at": 1.533333,
+          "x": 22.9629,
+          "y": 69.4024,
+          "visibility": 1
+        },
+        {
+          "at": 1.566667,
+          "x": 24.2317,
+          "y": 69.2043,
+          "visibility": 1
+        },
+        {
+          "at": 1.6,
+          "x": 25.0204,
+          "y": 68.8741,
+          "visibility": 1
+        },
+        {
+          "at": 1.633333,
+          "x": 26.2783,
+          "y": 68.7704,
+          "visibility": 1
+        },
+        {
+          "at": 1.666667,
+          "x": 28.5424,
+          "y": 68.9466,
+          "visibility": 1
+        },
+        {
+          "at": 1.7,
+          "x": 31.0967,
+          "y": 69.2874,
+          "visibility": 1
+        },
+        {
+          "at": 1.733333,
+          "x": 31.6111,
+          "y": 69.2307,
+          "visibility": 1
+        },
+        {
+          "at": 1.766667,
+          "x": 32.6649,
+          "y": 69.1732,
+          "visibility": 1
+        },
+        {
+          "at": 1.8,
+          "x": 33.9954,
+          "y": 69.1879,
+          "visibility": 1
+        },
+        {
+          "at": 1.833333,
+          "x": 35.2961,
+          "y": 69.4129,
+          "visibility": 1
+        },
+        {
+          "at": 1.866667,
+          "x": 37.2478,
+          "y": 69.475,
+          "visibility": 1
+        },
+        {
+          "at": 1.9,
+          "x": 39.0652,
+          "y": 69.4822,
+          "visibility": 1
+        },
+        {
+          "at": 1.933333,
+          "x": 40.9455,
+          "y": 69.6841,
+          "visibility": 1
+        },
+        {
+          "at": 1.966667,
+          "x": 42.8091,
+          "y": 69.9994,
+          "visibility": 1
+        },
+        {
+          "at": 2.0,
+          "x": 44.1947,
+          "y": 70.3211,
+          "visibility": 1
+        },
+        {
+          "at": 2.033333,
+          "x": 44.6237,
+          "y": 70.9329,
+          "visibility": 1
+        },
+        {
+          "at": 2.066667,
+          "x": 44.5275,
+          "y": 71.7263,
+          "visibility": 1
+        },
+        {
+          "at": 2.1,
+          "x": 43.4982,
+          "y": 72.4083,
+          "visibility": 1
+        },
+        {
+          "at": 2.133333,
+          "x": 41.2501,
+          "y": 73.0414,
+          "visibility": 1
+        },
+        {
+          "at": 2.166667,
+          "x": 37.777,
+          "y": 73.686,
+          "visibility": 1
+        },
+        {
+          "at": 2.2,
+          "x": 33.1515,
+          "y": 74.6211,
+          "visibility": 1
+        },
+        {
+          "at": 2.233333,
+          "x": 27.8459,
+          "y": 75.7939,
+          "visibility": 1
+        },
+        {
+          "at": 2.266667,
+          "x": 23.2306,
+          "y": 76.8836,
+          "visibility": 0.8148
+        },
+        {
+          "at": 2.3,
+          "x": 19.6259,
+          "y": 77.8502,
+          "visibility": 0.6296
+        },
+        {
+          "at": 2.333333,
+          "x": 17.2057,
+          "y": 78.6289,
+          "visibility": 0.4444
+        },
+        {
+          "at": 2.366667,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0.2593
+        },
+        {
+          "at": 2.4,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0.0741
+        },
+        {
+          "at": 2.433333,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0
+        },
+        {
+          "at": 2.466667,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0
+        },
+        {
+          "at": 2.5,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0
+        },
+        {
+          "at": 2.533333,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0
+        },
+        {
+          "at": 2.566667,
+          "x": 16.1139,
+          "y": 78.965,
+          "visibility": 0
+        },
+        {
+          "at": 2.6,
+          "x": 19.0442,
+          "y": 77.2065,
+          "visibility": 0
+        },
+        {
+          "at": 2.633333,
+          "x": 22.3231,
+          "y": 75.1447,
+          "visibility": 0
+        },
+        {
+          "at": 2.666667,
+          "x": 27.9222,
+          "y": 73.0892,
+          "visibility": 0
+        },
+        {
+          "at": 2.7,
+          "x": 33.2747,
+          "y": 71.0922,
+          "visibility": 0
+        },
+        {
+          "at": 2.733333,
+          "x": 38.3726,
+          "y": 69.2312,
+          "visibility": 1
+        },
+        {
+          "at": 2.766667,
+          "x": 40.3903,
+          "y": 69.2776,
+          "visibility": 1
+        },
+        {
+          "at": 2.8,
+          "x": 41.9079,
+          "y": 69.7738,
+          "visibility": 1
+        },
+        {
+          "at": 2.833333,
+          "x": 41.256,
+          "y": 70.3551,
+          "visibility": 1
+        },
+        {
+          "at": 2.866667,
+          "x": 40.5942,
+          "y": 70.7566,
+          "visibility": 1
+        },
+        {
+          "at": 2.9,
+          "x": 39.7353,
+          "y": 70.8707,
+          "visibility": 1
+        },
+        {
+          "at": 2.933333,
+          "x": 38.7255,
+          "y": 70.8467,
+          "visibility": 1
+        },
+        {
+          "at": 2.966667,
+          "x": 37.5764,
+          "y": 70.6783,
+          "visibility": 1
+        },
+        {
+          "at": 3.0,
+          "x": 36.2119,
+          "y": 70.4742,
+          "visibility": 1
+        },
+        {
+          "at": 3.033333,
+          "x": 35.2235,
+          "y": 70.2603,
+          "visibility": 1
+        },
+        {
+          "at": 3.066667,
+          "x": 34.9042,
+          "y": 70.2596,
+          "visibility": 1
+        },
+        {
+          "at": 3.1,
+          "x": 35.5397,
+          "y": 70.0793,
+          "visibility": 1
+        },
+        {
+          "at": 3.133333,
+          "x": 37.0799,
+          "y": 69.8057,
+          "visibility": 1
+        },
+        {
+          "at": 3.166667,
+          "x": 40.9966,
+          "y": 69.4726,
+          "visibility": 1
+        },
+        {
+          "at": 3.2,
+          "x": 44.8574,
+          "y": 69.2026,
+          "visibility": 1
+        },
+        {
+          "at": 3.233333,
+          "x": 48.1658,
+          "y": 68.8981,
+          "visibility": 1
+        },
+        {
+          "at": 3.266667,
+          "x": 50.3941,
+          "y": 68.7606,
+          "visibility": 1
+        },
+        {
+          "at": 3.3,
+          "x": 51.4854,
+          "y": 68.7027,
+          "visibility": 1
+        },
+        {
+          "at": 3.333333,
+          "x": 49.7411,
+          "y": 68.6674,
+          "visibility": 1
+        },
+        {
+          "at": 3.366667,
+          "x": 47.6945,
+          "y": 68.6937,
+          "visibility": 1
+        },
+        {
+          "at": 3.4,
+          "x": 45.7226,
+          "y": 68.7168,
+          "visibility": 1
+        },
+        {
+          "at": 3.433333,
+          "x": 44.1863,
+          "y": 68.7278,
+          "visibility": 1
+        },
+        {
+          "at": 3.466667,
+          "x": 43.2558,
+          "y": 68.7545,
+          "visibility": 1
+        },
+        {
+          "at": 3.5,
+          "x": 42.5918,
+          "y": 68.7363,
+          "visibility": 1
+        },
+        {
+          "at": 3.533333,
+          "x": 42.3622,
+          "y": 68.7302,
+          "visibility": 1
+        },
+        {
+          "at": 3.566667,
+          "x": 43.3583,
+          "y": 68.7079,
+          "visibility": 1
+        },
+        {
+          "at": 3.6,
+          "x": 44.5767,
+          "y": 68.6561,
+          "visibility": 1
+        },
+        {
+          "at": 3.633333,
+          "x": 45.9075,
+          "y": 68.6177,
+          "visibility": 1
+        },
+        {
+          "at": 3.666667,
+          "x": 47.6184,
+          "y": 68.6367,
+          "visibility": 1
+        },
+        {
+          "at": 3.7,
+          "x": 48.59,
+          "y": 68.6337,
+          "visibility": 1
+        },
+        {
+          "at": 3.733333,
+          "x": 48.2972,
+          "y": 68.6575,
+          "visibility": 1
+        },
+        {
+          "at": 3.766667,
+          "x": 48.8564,
+          "y": 69.1156,
+          "visibility": 1
+        },
+        {
+          "at": 3.8,
+          "x": 47.2767,
+          "y": 69.1519,
+          "visibility": 1
+        },
+        {
+          "at": 3.833333,
+          "x": 45.7405,
+          "y": 69.1298,
+          "visibility": 1
+        },
+        {
+          "at": 3.866667,
+          "x": 45.0011,
+          "y": 69.117,
+          "visibility": 1
+        },
+        {
+          "at": 3.9,
+          "x": 44.8524,
+          "y": 69.0395,
+          "visibility": 1
+        },
+        {
+          "at": 3.933333,
+          "x": 43.8992,
+          "y": 68.4934,
+          "visibility": 1
+        },
+        {
+          "at": 3.966667,
+          "x": 43.0149,
+          "y": 68.2901,
+          "visibility": 1
+        },
+        {
+          "at": 4.0,
+          "x": 42.3542,
+          "y": 68.0928,
+          "visibility": 1
+        },
+        {
+          "at": 4.033333,
+          "x": 41.4438,
+          "y": 67.9347,
+          "visibility": 1
+        },
+        {
+          "at": 4.066667,
+          "x": 40.2323,
+          "y": 67.8101,
+          "visibility": 1
+        },
+        {
+          "at": 4.1,
+          "x": 38.7247,
+          "y": 67.7302,
+          "visibility": 1
+        },
+        {
+          "at": 4.133333,
+          "x": 38.7303,
+          "y": 67.7792,
+          "visibility": 1
+        },
+        {
+          "at": 4.166667,
+          "x": 38.3458,
+          "y": 67.814,
+          "visibility": 0.8148
+        },
+        {
+          "at": 4.2,
+          "x": 37.3199,
+          "y": 67.8331,
+          "visibility": 0.8148
+        },
+        {
+          "at": 4.233333,
+          "x": 35.9635,
+          "y": 67.856,
+          "visibility": 0.8148
+        },
+        {
+          "at": 4.266667,
+          "x": 34.5467,
+          "y": 67.9092,
+          "visibility": 0.8148
+        },
+        {
+          "at": 4.3,
+          "x": 33.4618,
+          "y": 67.9011,
+          "visibility": 0.8148
+        },
+        {
+          "at": 4.333333,
+          "x": 32.3328,
+          "y": 67.9205,
+          "visibility": 1
+        },
+        {
+          "at": 4.366667,
+          "x": 31.7923,
+          "y": 67.9272,
+          "visibility": 1
+        },
+        {
+          "at": 4.4,
+          "x": 31.5932,
+          "y": 67.9183,
+          "visibility": 1
+        },
+        {
+          "at": 4.433333,
+          "x": 34.317,
+          "y": 67.9466,
+          "visibility": 1
+        },
+        {
+          "at": 4.466667,
+          "x": 37.0087,
+          "y": 67.9986,
+          "visibility": 1
+        },
+        {
+          "at": 4.5,
+          "x": 38.3678,
+          "y": 68.0206,
+          "visibility": 1
+        },
+        {
+          "at": 4.533333,
+          "x": 40.7151,
+          "y": 68.051,
+          "visibility": 1
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "at": 0.266667,
+      "sourceAt": 18.366667,
+      "palmX": 45.7087,
+      "palmY": 84.2158,
+      "x": 45.7087,
+      "y": 68.8711,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.3,
+      "sourceAt": 18.4,
+      "palmX": 45.5527,
+      "palmY": 84.5867,
+      "x": 45.5527,
+      "y": 68.8808,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.333333,
+      "sourceAt": 18.433333,
+      "palmX": 45.7874,
+      "palmY": 84.8995,
+      "x": 45.7874,
+      "y": 68.9921,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.366667,
+      "sourceAt": 18.466667,
+      "palmX": 45.9103,
+      "palmY": 85.4962,
+      "x": 45.9103,
+      "y": 68.9215,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.4,
+      "sourceAt": 18.5,
+      "palmX": 45.8338,
+      "palmY": 85.968,
+      "x": 45.8338,
+      "y": 69.2288,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.433333,
+      "sourceAt": 18.533333,
+      "palmX": 45.6126,
+      "palmY": 86.1145,
+      "x": 45.6126,
+      "y": 69.3866,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.466667,
+      "sourceAt": 18.566667,
+      "palmX": 45.2493,
+      "palmY": 86.3164,
+      "x": 45.2493,
+      "y": 68.9834,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.5,
+      "sourceAt": 18.6,
+      "palmX": 45.0355,
+      "palmY": 86.3345,
+      "x": 45.0355,
+      "y": 69.0514,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.533333,
+      "sourceAt": 18.633333,
+      "palmX": 44.7939,
+      "palmY": 86.0265,
+      "x": 44.7939,
+      "y": 69.0471,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.566667,
+      "sourceAt": 18.666667,
+      "palmX": 44.1994,
+      "palmY": 85.7818,
+      "x": 44.1994,
+      "y": 69.3661,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.6,
+      "sourceAt": 18.7,
+      "palmX": 43.9991,
+      "palmY": 85.4914,
+      "x": 43.9991,
+      "y": 69.6863,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.633333,
+      "sourceAt": 18.733333,
+      "palmX": 43.7217,
+      "palmY": 85.5495,
+      "x": 43.7217,
+      "y": 69.8826,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.666667,
+      "sourceAt": 18.766667,
+      "palmX": 43.6993,
+      "palmY": 85.67,
+      "x": 43.6993,
+      "y": 70.1626,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.7,
+      "sourceAt": 18.8,
+      "palmX": 44.12,
+      "palmY": 86.0828,
+      "x": 44.12,
+      "y": 70.238,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.733333,
+      "sourceAt": 18.833333,
+      "palmX": 45.3764,
+      "palmY": 86.2329,
+      "x": 45.3764,
+      "y": 69.6619,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.766667,
+      "sourceAt": 18.866667,
+      "palmX": 46.6926,
+      "palmY": 86.5086,
+      "x": 46.6926,
+      "y": 69.043,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.8,
+      "sourceAt": 18.9,
+      "palmX": 47.8477,
+      "palmY": 86.3536,
+      "x": 47.8477,
+      "y": 68.7895,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.833333,
+      "sourceAt": 18.933333,
+      "palmX": 47.6335,
+      "palmY": 86.556,
+      "x": 47.6335,
+      "y": 68.8649,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.866667,
+      "sourceAt": 18.966667,
+      "palmX": 44.8072,
+      "palmY": 85.9254,
+      "x": 44.8072,
+      "y": 68.893,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.9,
+      "sourceAt": 19.0,
+      "palmX": 42.8161,
+      "palmY": 85.559,
+      "x": 42.8161,
+      "y": 69.2488,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.933333,
+      "sourceAt": 19.033333,
+      "palmX": 42.7131,
+      "palmY": 85.7286,
+      "x": 42.7131,
+      "y": 68.9797,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 0.966667,
+      "sourceAt": 19.066667,
+      "palmX": 41.3374,
+      "palmY": 84.6321,
+      "x": 41.3374,
+      "y": 69.0381,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.0,
+      "sourceAt": 19.1,
+      "palmX": 40.9659,
+      "palmY": 83.949,
+      "x": 40.9659,
+      "y": 69.4051,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.033333,
+      "sourceAt": 19.133333,
+      "palmX": 41.486,
+      "palmY": 83.6265,
+      "x": 41.486,
+      "y": 69.2733,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.066667,
+      "sourceAt": 19.166667,
+      "palmX": 42.2092,
+      "palmY": 83.6531,
+      "x": 42.2092,
+      "y": 69.1302,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.1,
+      "sourceAt": 19.2,
+      "palmX": 43.1335,
+      "palmY": 84.079,
+      "x": 43.1335,
+      "y": 69.2244,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.133333,
+      "sourceAt": 19.233333,
+      "palmX": 43.271,
+      "palmY": 84.245,
+      "x": 43.271,
+      "y": 68.9614,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.166667,
+      "sourceAt": 19.266667,
+      "palmX": 43.5755,
+      "palmY": 84.7397,
+      "x": 43.5755,
+      "y": 69.4315,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.2,
+      "sourceAt": 19.3,
+      "palmX": 43.4429,
+      "palmY": 84.954,
+      "x": 43.4429,
+      "y": 69.5107,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.233333,
+      "sourceAt": 19.333333,
+      "palmX": 43.5992,
+      "palmY": 85.5019,
+      "x": 43.5992,
+      "y": 69.44,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.266667,
+      "sourceAt": 19.366667,
+      "palmX": 43.2514,
+      "palmY": 85.4515,
+      "x": 43.2514,
+      "y": 69.5329,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.3,
+      "sourceAt": 19.4,
+      "palmX": 42.5279,
+      "palmY": 86.0478,
+      "x": 42.5279,
+      "y": 69.6377,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.333333,
+      "sourceAt": 19.433333,
+      "palmX": 42.0881,
+      "palmY": 86.7053,
+      "x": 42.0881,
+      "y": 69.6937,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.366667,
+      "sourceAt": 19.466667,
+      "palmX": 41.2324,
+      "palmY": 87.7247,
+      "x": 41.2324,
+      "y": 69.4871,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.4,
+      "sourceAt": 19.5,
+      "palmX": 39.8968,
+      "palmY": 88.2357,
+      "x": 39.8968,
+      "y": 69.2956,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.433333,
+      "sourceAt": 19.533333,
+      "palmX": 37.7017,
+      "palmY": 88.8239,
+      "x": 37.7017,
+      "y": 69.8239,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.466667,
+      "sourceAt": 19.566667,
+      "palmX": 25.1206,
+      "palmY": 89.3712,
+      "x": 25.1206,
+      "y": 70.3712,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.5,
+      "sourceAt": 19.6,
+      "palmX": 25.7223,
+      "palmY": 90.0353,
+      "x": 25.7223,
+      "y": 71.0353,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.533333,
+      "sourceAt": 19.633333,
+      "palmX": 23.1181,
+      "palmY": 88.8351,
+      "x": 23.1181,
+      "y": 69.8351,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.566667,
+      "sourceAt": 19.666667,
+      "palmX": 20.8281,
+      "palmY": 87.2343,
+      "x": 20.8281,
+      "y": 68.2343,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.6,
+      "sourceAt": 19.7,
+      "palmX": 20.0256,
+      "palmY": 86.5359,
+      "x": 20.0256,
+      "y": 67.5359,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.633333,
+      "sourceAt": 19.733333,
+      "palmX": 31.4645,
+      "palmY": 85.804,
+      "x": 31.4645,
+      "y": 69.3811,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.666667,
+      "sourceAt": 19.766667,
+      "palmX": 29.6659,
+      "palmY": 84.9933,
+      "x": 29.6659,
+      "y": 69.384,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.7,
+      "sourceAt": 19.8,
+      "palmX": 29.4074,
+      "palmY": 85.0753,
+      "x": 29.4074,
+      "y": 69.3168,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.733333,
+      "sourceAt": 19.833333,
+      "palmX": 32.1485,
+      "palmY": 86.038,
+      "x": 32.1485,
+      "y": 69.115,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.766667,
+      "sourceAt": 19.866667,
+      "palmX": 32.7973,
+      "palmY": 87.4031,
+      "x": 32.7973,
+      "y": 69.2401,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.8,
+      "sourceAt": 19.9,
+      "palmX": 34.0362,
+      "palmY": 88.0419,
+      "x": 34.0362,
+      "y": 69.0975,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.833333,
+      "sourceAt": 19.933333,
+      "palmX": 34.9351,
+      "palmY": 87.9956,
+      "x": 34.9351,
+      "y": 69.0967,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.866667,
+      "sourceAt": 19.966667,
+      "palmX": 36.0599,
+      "palmY": 88.3904,
+      "x": 36.0599,
+      "y": 69.3904,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.9,
+      "sourceAt": 20.0,
+      "palmX": 38.6522,
+      "palmY": 89.24,
+      "x": 38.6522,
+      "y": 70.24,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.933333,
+      "sourceAt": 20.033333,
+      "palmX": 42.5556,
+      "palmY": 88.5502,
+      "x": 42.5556,
+      "y": 69.5502,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 1.966667,
+      "sourceAt": 20.066667,
+      "palmX": 43.123,
+      "palmY": 88.1337,
+      "x": 43.123,
+      "y": 69.1337,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.0,
+      "sourceAt": 20.1,
+      "palmX": 44.337,
+      "palmY": 89.1062,
+      "x": 44.337,
+      "y": 70.1062,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.033333,
+      "sourceAt": 20.133333,
+      "palmX": 45.3779,
+      "palmY": 89.9669,
+      "x": 45.3779,
+      "y": 70.9669,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.066667,
+      "sourceAt": 20.166667,
+      "palmX": 45.5802,
+      "palmY": 90.8487,
+      "x": 45.5802,
+      "y": 71.8487,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.1,
+      "sourceAt": 20.2,
+      "palmX": 44.7006,
+      "palmY": 91.6089,
+      "x": 44.7006,
+      "y": 72.6089,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.133333,
+      "sourceAt": 20.233333,
+      "palmX": 42.642,
+      "palmY": 92.1008,
+      "x": 42.642,
+      "y": 73.1008,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.166667,
+      "sourceAt": 20.266667,
+      "palmX": 39.1903,
+      "palmY": 92.5163,
+      "x": 39.1903,
+      "y": 73.5163,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.2,
+      "sourceAt": 20.3,
+      "palmX": 34.1372,
+      "palmY": 93.1321,
+      "x": 34.1372,
+      "y": 74.1321,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.233333,
+      "sourceAt": 20.333333,
+      "palmX": 28.215,
+      "palmY": 94.0717,
+      "x": 28.215,
+      "y": 75.0717,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.266667,
+      "sourceAt": 20.366667,
+      "palmX": 21.5729,
+      "palmY": 96.2844,
+      "x": 21.5729,
+      "y": 77.2844,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.3,
+      "sourceAt": 20.4,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 2.333333,
+      "sourceAt": 20.433333,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0.814814814814813,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.366667,
+      "sourceAt": 20.466667,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0.6296296296296284,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.4,
+      "sourceAt": 20.5,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0.444444444444444,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.433333,
+      "sourceAt": 20.533333,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0.2592592592592594,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.466667,
+      "sourceAt": 20.566667,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0.0740740740740724,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.5,
+      "sourceAt": 20.6,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.533333,
+      "sourceAt": 20.633333,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.566667,
+      "sourceAt": 20.666667,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.6,
+      "sourceAt": 20.7,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.633333,
+      "sourceAt": 20.733333,
+      "palmX": 16.1139,
+      "palmY": 97.965,
+      "x": 16.1139,
+      "y": 78.965,
+      "visibility": 0,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 2.666667,
+      "sourceAt": 20.766667,
+      "palmX": 30.7652,
+      "palmY": 89.1725,
+      "x": 30.7652,
+      "y": 70.1725,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.7,
+      "sourceAt": 20.8,
+      "palmX": 32.5084,
+      "palmY": 87.6558,
+      "x": 32.5084,
+      "y": 68.6558,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.733333,
+      "sourceAt": 20.833333,
+      "palmX": 44.1097,
+      "palmY": 87.2691,
+      "x": 44.1097,
+      "y": 68.6876,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.766667,
+      "sourceAt": 20.866667,
+      "palmX": 42.8763,
+      "palmY": 87.9803,
+      "x": 42.8763,
+      "y": 68.9803,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.8,
+      "sourceAt": 20.9,
+      "palmX": 41.6032,
+      "palmY": 88.6598,
+      "x": 41.6032,
+      "y": 69.6598,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.833333,
+      "sourceAt": 20.933333,
+      "palmX": 40.8541,
+      "palmY": 89.4047,
+      "x": 40.8541,
+      "y": 70.4047,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.866667,
+      "sourceAt": 20.966667,
+      "palmX": 40.0962,
+      "palmY": 90.1366,
+      "x": 40.0962,
+      "y": 71.1366,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.9,
+      "sourceAt": 21.0,
+      "palmX": 40.8501,
+      "palmY": 90.5941,
+      "x": 40.8501,
+      "y": 71.5941,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.933333,
+      "sourceAt": 21.033333,
+      "palmX": 39.5674,
+      "palmY": 89.9878,
+      "x": 39.5674,
+      "y": 70.9878,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 2.966667,
+      "sourceAt": 21.066667,
+      "palmX": 37.3088,
+      "palmY": 89.2304,
+      "x": 37.3088,
+      "y": 70.2304,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.0,
+      "sourceAt": 21.1,
+      "palmX": 35.805,
+      "palmY": 89.2848,
+      "x": 35.805,
+      "y": 70.2848,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.033333,
+      "sourceAt": 21.133333,
+      "palmX": 34.3506,
+      "palmY": 89.172,
+      "x": 34.3506,
+      "y": 70.2942,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.066667,
+      "sourceAt": 21.166667,
+      "palmX": 34.0275,
+      "palmY": 88.9385,
+      "x": 34.0275,
+      "y": 70.5737,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.1,
+      "sourceAt": 21.2,
+      "palmX": 34.6258,
+      "palmY": 88.6471,
+      "x": 34.6258,
+      "y": 69.9185,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.133333,
+      "sourceAt": 21.233333,
+      "palmX": 35.7121,
+      "palmY": 89.2269,
+      "x": 35.7121,
+      "y": 70.2269,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.166667,
+      "sourceAt": 21.266667,
+      "palmX": 38.9826,
+      "palmY": 88.3831,
+      "x": 38.9826,
+      "y": 69.3831,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.2,
+      "sourceAt": 21.3,
+      "palmX": 42.0517,
+      "palmY": 87.9263,
+      "x": 42.0517,
+      "y": 68.9263,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.233333,
+      "sourceAt": 21.333333,
+      "palmX": 53.6108,
+      "palmY": 87.9084,
+      "x": 53.6108,
+      "y": 68.9084,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.266667,
+      "sourceAt": 21.366667,
+      "palmX": 53.9299,
+      "palmY": 86.9028,
+      "x": 53.9299,
+      "y": 68.5685,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.3,
+      "sourceAt": 21.4,
+      "palmX": 52.254,
+      "palmY": 86.5041,
+      "x": 52.254,
+      "y": 68.7043,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.333333,
+      "sourceAt": 21.433333,
+      "palmX": 50.1243,
+      "palmY": 86.5879,
+      "x": 50.1243,
+      "y": 68.6953,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.366667,
+      "sourceAt": 21.466667,
+      "palmX": 47.5078,
+      "palmY": 86.9215,
+      "x": 47.5078,
+      "y": 68.6368,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.4,
+      "sourceAt": 21.5,
+      "palmX": 44.8895,
+      "palmY": 86.7726,
+      "x": 44.8895,
+      "y": 68.7319,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.433333,
+      "sourceAt": 21.533333,
+      "palmX": 43.6968,
+      "palmY": 87.1535,
+      "x": 43.6968,
+      "y": 68.7002,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.466667,
+      "sourceAt": 21.566667,
+      "palmX": 42.3947,
+      "palmY": 87.4827,
+      "x": 42.3947,
+      "y": 68.8197,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.5,
+      "sourceAt": 21.6,
+      "palmX": 42.4427,
+      "palmY": 87.7122,
+      "x": 42.4427,
+      "y": 68.7506,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.533333,
+      "sourceAt": 21.633333,
+      "palmX": 42.8553,
+      "palmY": 87.2954,
+      "x": 42.8553,
+      "y": 68.77,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.566667,
+      "sourceAt": 21.666667,
+      "palmX": 41.5697,
+      "palmY": 86.3625,
+      "x": 41.5697,
+      "y": 68.6409,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.6,
+      "sourceAt": 21.7,
+      "palmX": 42.5488,
+      "palmY": 86.3802,
+      "x": 42.5488,
+      "y": 68.6699,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.633333,
+      "sourceAt": 21.733333,
+      "palmX": 47.375,
+      "palmY": 87.4831,
+      "x": 47.375,
+      "y": 68.7079,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.666667,
+      "sourceAt": 21.766667,
+      "palmX": 48.5349,
+      "palmY": 87.3209,
+      "x": 48.5349,
+      "y": 68.4916,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.7,
+      "sourceAt": 21.8,
+      "palmX": 49.5093,
+      "palmY": 86.909,
+      "x": 49.5093,
+      "y": 68.578,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.733333,
+      "sourceAt": 21.833333,
+      "palmX": 50.1241,
+      "palmY": 87.0018,
+      "x": 50.1241,
+      "y": 68.7359,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.766667,
+      "sourceAt": 21.866667,
+      "palmX": 47.4066,
+      "palmY": 87.0017,
+      "x": 47.4066,
+      "y": 68.655,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.8,
+      "sourceAt": 21.9,
+      "palmX": 45.9113,
+      "palmY": 87.4561,
+      "x": 45.9113,
+      "y": 68.8269,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.833333,
+      "sourceAt": 21.933333,
+      "palmX": 51.3305,
+      "palmY": 89.7822,
+      "x": 51.3305,
+      "y": 70.7822,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.866667,
+      "sourceAt": 21.966667,
+      "palmX": 41.6111,
+      "palmY": 87.2498,
+      "x": 41.6111,
+      "y": 68.7593,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.9,
+      "sourceAt": 22.0,
+      "palmX": 42.443,
+      "palmY": 86.4077,
+      "x": 42.443,
+      "y": 68.6258,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.933333,
+      "sourceAt": 22.033333,
+      "palmX": 43.7095,
+      "palmY": 85.0873,
+      "x": 43.7095,
+      "y": 68.5909,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 3.966667,
+      "sourceAt": 22.066667,
+      "palmX": 45.1677,
+      "palmY": 82.6954,
+      "x": 45.1677,
+      "y": 68.4391,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.0,
+      "sourceAt": 22.1,
+      "palmX": 46.5649,
+      "palmY": 80.6812,
+      "x": 46.5649,
+      "y": 68.0521,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.033333,
+      "sourceAt": 22.133333,
+      "palmX": 37.1893,
+      "palmY": 77.1145,
+      "x": 37.1893,
+      "y": 67.7426,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.066667,
+      "sourceAt": 22.166667,
+      "palmX": 39.1396,
+      "palmY": 78.7203,
+      "x": 39.1396,
+      "y": 67.6394,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.1,
+      "sourceAt": 22.2,
+      "palmX": 39.1577,
+      "palmY": 78.5979,
+      "x": 39.1577,
+      "y": 67.8005,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.133333,
+      "sourceAt": 22.233333,
+      "palmX": 39.1099,
+      "palmY": 78.6479,
+      "x": 39.1099,
+      "y": 67.8157,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.166667,
+      "sourceAt": 22.266667,
+      "palmX": 39.0272,
+      "palmY": 78.8349,
+      "x": 39.0272,
+      "y": 67.6529,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.2,
+      "sourceAt": 22.3,
+      "palmX": 37.217,
+      "palmY": 79.4426,
+      "x": 37.217,
+      "y": 67.9874,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.233333,
+      "sourceAt": 22.333333,
+      "palmX": 37.217,
+      "palmY": 79.4426,
+      "x": 37.217,
+      "y": 67.8136,
+      "visibility": 0.8148148148148154,
+      "detected": false,
+      "measurement": "lost"
+    },
+    {
+      "at": 4.266667,
+      "sourceAt": 22.366667,
+      "palmX": 34.0284,
+      "palmY": 79.2725,
+      "x": 34.0284,
+      "y": 67.8957,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.3,
+      "sourceAt": 22.4,
+      "palmX": 32.3279,
+      "palmY": 78.375,
+      "x": 32.3279,
+      "y": 67.9306,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.333333,
+      "sourceAt": 22.433333,
+      "palmX": 31.9432,
+      "palmY": 77.9914,
+      "x": 31.9432,
+      "y": 67.9185,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.366667,
+      "sourceAt": 22.466667,
+      "palmX": 31.7924,
+      "palmY": 77.6993,
+      "x": 31.7924,
+      "y": 67.9469,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.4,
+      "sourceAt": 22.5,
+      "palmX": 31.5723,
+      "palmY": 77.5964,
+      "x": 31.5723,
+      "y": 67.9107,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.433333,
+      "sourceAt": 22.533333,
+      "palmX": 31.3259,
+      "palmY": 77.6627,
+      "x": 31.3259,
+      "y": 67.9293,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.466667,
+      "sourceAt": 22.566667,
+      "palmX": 31.3321,
+      "palmY": 77.897,
+      "x": 31.3321,
+      "y": 67.8862,
+      "visibility": 1,
+      "detected": false,
+      "measurement": "optical-flow"
+    },
+    {
+      "at": 4.5,
+      "sourceAt": 22.6,
+      "palmX": 45.5625,
+      "palmY": 86.178,
+      "x": 45.5625,
+      "y": 68.0599,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    },
+    {
+      "at": 4.533333,
+      "sourceAt": 22.633333,
+      "palmX": 45.2507,
+      "palmY": 85.4088,
+      "x": 45.2507,
+      "y": 68.2069,
+      "visibility": 1,
+      "detected": true,
+      "measurement": "landmarks"
+    }
+  ],
+  "report": {
+    "samples": 129,
+    "detected": 101,
+    "visible": 117,
+    "xRange": [
+      16.1139,
+      51.4854
+    ],
+    "yRange": [
+      67.7302,
+      78.965
+    ]
+  }
+}

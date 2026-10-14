@@ -1,0 +1,4 @@
+# Optional offline hand tracker, tested on Python 3.12 (MediaPipe includes models).
+# The Windows v0.4 Python 3.14 environment may need a separate Python 3.12 venv.
+mediapipe==0.10.21
+opencv-contrib-python<4.12

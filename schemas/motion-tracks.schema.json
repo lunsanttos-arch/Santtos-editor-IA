@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "tracks"
+  ],
+  "properties": {
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "visualAt",
+          "asset",
+          "points"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "visualAt": {
+            "type": "number",
+            "minimum": 0
+          },
+          "asset": {
+            "type": "string",
+            "minLength": 1
+          },
+          "points": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "at",
+                "x",
+                "y",
+                "visibility"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "at": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "x": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "y": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "visibility": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sourceSegments": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "number"
+        }
+      }
+    },
+    "zoomIntensity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 0.25
+    },
+    "format": {
+      "enum": [
+        "falado",
+        "mudo",
+        "narrado"
+      ]
+    }
+  },
+  "if": {
+    "properties": {
+      "tracks": {
+        "minItems": 1
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "sourceSha256",
+      "sourceSegments",
+      "zoomIntensity",
+      "format"
+    ]
+  }
+}

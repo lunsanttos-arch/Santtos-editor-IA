@@ -79,6 +79,39 @@ class EditRules(unittest.TestCase):
         self.plan['captions'] = [{'at': 0, 'duration': 1, 'text': 'Uma ideia', 'highlight': ['venda']}]
         self.assertTrue(any('ausente do texto' in e for e in self.errors()))
 
+    def track(self):
+        self.plan['visuals'] = [self.logo()]
+        return {'sourceSha256': '0' * 64, 'format': 'falado', 'sourceSegments': [[0, 5, 1, 1]], 'zoomIntensity': .08,
+                'tracks': [{'visualAt': .2, 'asset': 'chatgpt.svg', 'points': [
+                    {'at': .2, 'x': 40, 'y': 65, 'visibility': 1},
+                    {'at': 1.2, 'x': 50, 'y': 68, 'visibility': 1}]}]}
+
+    def test_valid_tracking_and_static_v04(self):
+        self.assertEqual([], module.check_motion_tracks({'tracks': []}, self.plan, self.profile))
+        self.assertEqual([], module.check_motion_tracks(self.track(), self.plan, self.profile))
+
+    def test_stale_track_rejected_after_cut_change(self):
+        track = self.track()
+        track['sourceSegments'][0][0] = 1
+        self.assertTrue(any('desatualizado' in e for e in module.check_motion_tracks(track, self.plan, self.profile)))
+
+    def test_invisible_track_rejected(self):
+        track = self.track()
+        for p in track['tracks'][0]['points']:
+            p['visibility'] = 0
+        self.assertTrue(any('visível suficiente' in e for e in module.check_motion_tracks(track, self.plan, self.profile)))
+
+    def test_reversed_track_timestamps_rejected(self):
+        track = self.track()
+        track['tracks'][0]['points'].reverse()
+        self.assertTrue(any('crescentes' in e for e in module.check_motion_tracks(track, self.plan, self.profile)))
+
+    def test_hidden_tracking_cannot_cover_an_explicit_request(self):
+        track = self.track()
+        for p in track['tracks'][0]['points']:
+            p['visibility'] = 0
+        self.assertTrue(module.uncovered_cues(self.plan, self.director, track))
+
 
 if __name__ == '__main__':
     unittest.main()

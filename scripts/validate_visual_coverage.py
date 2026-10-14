@@ -12,7 +12,9 @@ plan = json.loads(PLAN.read_text(encoding='utf-8'))
 director = json.loads(DIRECTOR.read_text(encoding='utf-8'))
 from check_edit import uncovered_cues
 
-missing = uncovered_cues(plan, director)
+tracking_path = Path('data/motion-tracks.json')
+tracks = json.loads(tracking_path.read_text(encoding='utf-8')) if tracking_path.exists() else None
+missing = uncovered_cues(plan, director, tracks)
 if missing:
     print('FALHA DE COBERTURA VISUAL:')
     for item in missing:

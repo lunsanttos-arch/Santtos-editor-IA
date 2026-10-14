@@ -1,7 +1,14 @@
 import React from 'react';
 import {Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {style} from '../../style';
+import {style, format} from '../../style';
 import type {VisualItem} from '../../types';
+import tracksJson from '../../../data/motion-tracks.json';
+import planJson from '../../../data/edit-plan.json';
+import type {EditPlan} from '../../types';
+import {trackedPosition, validateTrackContext, type MotionTracks} from '../../tracking';
+
+const tracks = tracksJson as MotionTracks;
+validateTrackContext(tracks, planJson as EditPlan, style.zoomIntensity, format.name);
 
 export const VisualElement: React.FC<{item: VisualItem}> = ({item}) => {
   const frame = useCurrentFrame();
@@ -13,10 +20,11 @@ export const VisualElement: React.FC<{item: VisualItem}> = ({item}) => {
   const baseScale = Math.max(0.5, Math.min(1.6, item.scale || 1));
   const enterScale = item.enter === 'fade' ? 1 : item.enter === 'slide' ? 1 : 0.72 + progress * 0.28;
   const slideY = item.enter === 'slide' ? (1 - progress) * 60 : 0;
-  const left = `${item.x}%`;
-  const top = `${item.y}%`;
+  const position = trackedPosition(item, frame / fps, tracks);
+  const left = `${position.x}%`;
+  const top = `${position.y}%`;
   const common: React.CSSProperties = {
-    position: 'absolute', left, top, zIndex: 35, opacity,
+    position: 'absolute', left, top, zIndex: 35, opacity: opacity * position.visibility,
     transform: `translate(-50%, -50%) translateY(${slideY}px) scale(${baseScale * enterScale})`,
     transformOrigin: 'center center', pointerEvents: 'none',
   };

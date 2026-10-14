@@ -49,7 +49,8 @@ semântica. O renderer não detecta rostos automaticamente.
 
 `components/graphics/VisualElement` e `components/titles/Motion` preservam os
 tipos v0.4 e podem ser reutilizados. Câmera aplica easing e limita os endpoints
-de zoom ao preset; drift, recenter e tracking facial ainda não estão implementados.
+de zoom ao preset; drift e recenter ainda não estão implementados. Tracking offline da palma e
+proteção aproximada do rosto estão descritos em [docs/HAND_TRACKING.md](../docs/HAND_TRACKING.md).
 SoundCue dispõe de seis sons sintéticos originais. A inserção automática usa
 apenas soft-pop/swipe em visuais com motivo, respeitando espaçamento e volume.
 Presets cinematic/journal desligam efeitos; o formato mudo silencia também os

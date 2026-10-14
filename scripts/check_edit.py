@@ -1,5 +1,6 @@
 """Fail closed on malformed plans and measurable editorial rules. No AI judgement."""
 import argparse
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -20,7 +21,39 @@ def tokens(text):
     return set(re.findall(r'[a-z0-9]+', text))
 
 
-def uncovered_cues(plan, director):
+def check_motion_tracks(data, plan, profile, source=None, expected_format=None):
+    from jsonschema import Draft202012Validator
+    errors = [f'tracking schema: {e.message}' for e in Draft202012Validator(load(ROOT / 'schemas/motion-tracks.schema.json')).iter_errors(data)]
+    if errors or not data['tracks']:
+        return errors
+    signature = [[s['sourceStart'], s['sourceEnd'], s.get('zoom', 1), s.get('zoomTo', s.get('zoom', 1))] for s in plan['segments']]
+    if data['sourceSegments'] != signature or data['zoomIntensity'] != profile['zoomIntensity']:
+        errors.append('Tracking desatualizado após alteração de cortes ou câmera')
+    if expected_format is not None and data.get('format') != expected_format:
+        errors.append('Tracking desatualizado após alteração do formato/caption safe area')
+    if source is not None and source.is_file():
+        with source.open('rb') as f:
+            if hashlib.file_digest(f, 'sha256').hexdigest() != data['sourceSha256']:
+                errors.append('Tracking pertence a outro vídeo bruto')
+    seen = set()
+    for track in data['tracks']:
+        key = (track['visualAt'], track['asset'])
+        visual = next((v for v in plan.get('visuals', []) if (v['at'], v['asset']) == key), None)
+        if key in seen or visual is None:
+            errors.append('Tracking duplicado ou sem visual correspondente')
+            continue
+        seen.add(key)
+        points = track['points']
+        if any(a['at'] >= b['at'] for a, b in zip(points, points[1:])):
+            errors.append('Timestamps do tracking precisam ser estritamente crescentes')
+        if points[0]['at'] > visual['at'] or points[-1]['at'] < visual['at'] + visual['duration'] - 1 / plan['fps']:
+            errors.append('Tracking não cobre o intervalo do visual')
+        if sum(p['visibility'] > .5 for p in points) / len(points) < .65:
+            errors.append('Tracking sem cobertura visível suficiente (mínimo 65%)')
+    return errors
+
+
+def uncovered_cues(plan, director, motion_tracks=None):
     missing = []
     for cue in director.get('cues', []):
         if cue.get('priority') != 'high':
@@ -36,6 +69,11 @@ def uncovered_cues(plan, director):
                 subject = tokens(cue.get('subject', ''))
                 hint = cue.get('assetHint', '')
                 def represents(item, bucket):
+                    track = next((t for t in (motion_tracks or {}).get('tracks', [])
+                                  if t['visualAt'] == item['at'] and t['asset'] == item.get('asset')), None) if bucket == 'visuals' else None
+                    if track is not None and not any(p['visibility'] > .5 and at - .35 <= p['at'] <= until + .35
+                                                     for p in track['points']):
+                        return False
                     # A headline mentioning a brand is not its requested logo.
                     if hint:
                         return bucket in ('visuals', 'broll') and item.get('asset') == hint
@@ -132,11 +170,19 @@ def main():
             preset_errors = list(Draft202012Validator(load(ROOT / 'schemas/style-profile.schema.json')).iter_errors(load(preset_file)))
             if preset_errors:
                 raise ValueError(f'{preset_file.name}: {preset_errors[0].message}')
-        errors = check(load(ROOT / args.plan), load(ROOT / 'data/transcript.json'),
+        plan = load(ROOT / args.plan)
+        errors = check(plan, load(ROOT / 'data/transcript.json'),
                        load(director_path) if director_path.exists() else None,
                        load(ROOT / f'config/formats/{selection["format"]}.json'),
                        load(ROOT / f'config/presets/{selection["preset"]}.json'),
                        ROOT / 'public', load(ROOT / 'schemas/edit-plan.schema.json'))
+        tracking_path = ROOT / 'data/motion-tracks.json'
+        if not errors and tracking_path.exists():
+            motion_tracks = load(tracking_path)
+            errors.extend(check_motion_tracks(motion_tracks, plan,
+                          load(ROOT / f'config/presets/{selection["preset"]}.json'), ROOT / 'public/input.mp4', selection['format']))
+            if not errors and director_path.exists():
+                errors.extend('Pedido visual oculto no tracking: ' + item for item in uncovered_cues(plan, load(director_path), motion_tracks))
         if not director_path.exists():
             print('AVISO: Visual Director ausente; cobertura não avaliada.')
         if errors:

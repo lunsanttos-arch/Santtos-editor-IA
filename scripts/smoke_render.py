@@ -18,7 +18,7 @@ def main():
     if media.exists():
         raise SystemExit('Smoke test requer public/input.mp4 ausente; preserve o bruto existente.')
     files = [ROOT / name for name in ('data/edit-plan.json', 'data/transcript.json',
-                                      'data/visual-director.json', 'config/workflow.json')]
+                                      'data/visual-director.json', 'config/workflow.json', 'data/motion-tracks.json')]
     backups = {p: p.read_bytes() if p.exists() else None for p in files}
     npm = 'npm.cmd' if sys.platform == 'win32' else 'npm'
     npx = 'npx.cmd' if sys.platform == 'win32' else 'npx'
@@ -44,6 +44,7 @@ def main():
         write(files[2], {'cues': [{'id': 'cue-001', 'priority': 'high', 'sourceAt': .2, 'sourceEnd': .9,
                                   'subject': 'ChatGPT', 'assetHint': 'chatgpt.svg'}]})
         write(files[3], {'preset': 'santtos-clean', 'format': 'falado'})
+        write(files[4], {'tracks': []})
         run([npm, 'run', 'check:edit'])
         output = ROOT / 'output/smoke/alpha.mp4'
         output.parent.mkdir(parents=True, exist_ok=True)

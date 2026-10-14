@@ -11,7 +11,7 @@
     "prerender": "node scripts/check-workflow.mjs --require-director --require-media",
     "prerender:review": "node scripts/check-workflow.mjs --require-director --require-media",
     "test": "node scripts/check-workflow.mjs --test && npm run test:timeline",
-    "test:timeline": "node --experimental-strip-types --test tests/timeline.test.ts"
+    "test:timeline": "node --experimental-strip-types --test tests/timeline.test.ts tests/tracking.test.ts"
   },
   "dependencies": {
     "@remotion/cli": "latest",

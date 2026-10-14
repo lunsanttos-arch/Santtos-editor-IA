@@ -13,3 +13,7 @@ Execute npm test, npm run typecheck e npm run check:edit após mudanças relevan
 O render exige public/input.mp4 e data/visual-director.json. Não contorne gates.
 Para validar sem bruto real: scripts/smoke_render.py (recusa bruto existente e
 restaura planos). Não declare aprovação estética usando apenas esse teste.
+
+Para acompanhamento de mão, leia docs/HAND_TRACKING.md e gere o sidecar com
+scripts/track_hand.py após escolher o plano. Não invente keyframes de tracking
+sem medir o vídeo. Regenere após trocar bruto, cortes, formato ou câmera.

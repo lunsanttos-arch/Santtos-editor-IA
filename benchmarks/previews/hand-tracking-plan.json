@@ -1,0 +1,32 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "segments": [
+    {
+      "sourceStart": 18.1,
+      "sourceEnd": 22.9,
+      "zoom": 1,
+      "zoomTo": 1,
+      "reason": "Teste visual de posição; sem decisões sobre fala"
+    }
+  ],
+  "captions": [],
+  "motions": [],
+  "overlays": [],
+  "broll": [],
+  "visuals": [
+    {
+      "at": 0.3,
+      "duration": 4.2,
+      "type": "brand",
+      "text": "ChatGPT",
+      "asset": "chatgpt-mark.svg",
+      "x": 42,
+      "y": 67,
+      "scale": 0.8,
+      "enter": "pop",
+      "reason": "Teste visual: elemento acima da palma, sem cobrir o rosto"
+    }
+  ]
+}
