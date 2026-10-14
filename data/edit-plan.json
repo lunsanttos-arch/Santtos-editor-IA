@@ -1,0 +1,19 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "segments": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 5.0,
+      "zoom": 1.0,
+      "zoomTo": 1.0,
+      "reason": "baseline full take before AI editorial pass"
+    }
+  ],
+  "captions": [],
+  "motions": [],
+  "overlays": [],
+  "broll": [],
+  "visuals": []
+}

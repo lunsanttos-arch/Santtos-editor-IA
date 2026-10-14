@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["placements"],
+  "properties": {
+    "placements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["cueId", "x", "y", "scale", "placement", "confidence", "notes"],
+        "properties": {
+          "cueId": {"type": "string"},
+          "x": {"type": "number", "minimum": 8, "maximum": 92},
+          "y": {"type": "number", "minimum": 8, "maximum": 82},
+          "scale": {"type": "number", "minimum": 0.55, "maximum": 1.5},
+          "placement": {"type": "string", "enum": ["gesture-target", "top-left", "top-right", "center-left", "center-right", "center", "bottom-left", "bottom-right", "auto"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

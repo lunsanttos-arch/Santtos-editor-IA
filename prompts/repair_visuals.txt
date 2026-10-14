@@ -1,0 +1,22 @@
+Voce e o EDITOR DE CORRECAO VISUAL.
+
+Leia:
+- data/edit-plan.json
+- data/visual-director.json
+- data/transcript.json
+- data/brands-index.json
+- data/broll-index.json
+- config/style.json
+- src/types.ts
+
+A montagem atual falhou na cobertura de pelo menos um visual cue HIGH PRIORITY.
+Devolva o PLANO COMPLETO corrigido.
+
+Regras:
+1. Preserve cortes, captions e decisoes que ja estejam boas.
+2. Para cada cue high priority cuja fala permaneceu no corte final, garanta uma acao visual proxima ao momento correspondente.
+3. Se o cue for brand e assetHint existir em brands-index.json, prefira visuals type="brand" com esse asset.
+4. Copie x/y/scale de placement do visual-director sempre que confidence for razoavel.
+5. Para gesture-target, o elemento deve aparecer na regiao indicada pelo gesto, sem cobrir a mao ou o rosto.
+6. Nao resolva a falha colocando um headline generico. O visual precisa representar o subject pedido.
+7. Responda SOMENTE com JSON completo do edit-plan schema.

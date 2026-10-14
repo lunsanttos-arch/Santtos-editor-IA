@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cues"],
+  "properties": {
+    "cues": {
+      "type": "array",
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "sourceAt", "sourceEnd", "priority", "kind", "subject", "triggerText", "action", "assetHint", "placementIntent", "reason"],
+        "properties": {
+          "id": {"type": "string"},
+          "sourceAt": {"type": "number", "minimum": 0},
+          "sourceEnd": {"type": "number", "minimum": 0},
+          "priority": {"type": "string", "enum": ["high", "medium", "low"]},
+          "kind": {"type": "string", "enum": ["brand", "object", "concept", "number", "gesture", "interface", "location", "comparison", "process"]},
+          "subject": {"type": "string"},
+          "triggerText": {"type": "string"},
+          "action": {"type": "string", "enum": ["show", "label", "point", "highlight", "explain", "compare"]},
+          "assetHint": {"type": "string"},
+          "placementIntent": {"type": "string", "enum": ["gesture-target", "top-left", "top-right", "center-left", "center-right", "center", "bottom-left", "bottom-right", "auto"]},
+          "reason": {"type": "string"}
+        }
+      }
+    }
+  }
+}

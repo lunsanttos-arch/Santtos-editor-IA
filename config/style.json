@@ -1,0 +1,56 @@
+{
+  "preset": "reel-visual-director-v04",
+  "maxFinalSeconds": 60,
+  "pace": "fast-natural",
+  "hook": "strongest-true-line-first",
+  "captions": {
+    "mode": "semantic-cards",
+    "maxWords": 6,
+    "highlightImportantWords": true,
+    "safeBottom": 225
+  },
+  "zooms": {
+    "density": "low",
+    "min": 1.0,
+    "max": 1.12,
+    "animated": true,
+    "maxPer30Seconds": 4
+  },
+  "motions": {
+    "density": "medium-low",
+    "maxPer30Seconds": 4,
+    "preferMeaningOverDecoration": true
+  },
+  "visualDirector": {
+    "enabled": true,
+    "targetRelevantPer15Seconds": "2-4 when content supports it",
+    "explicitVisualRequestIsMandatory": true,
+    "gestureAwarePlacement": true,
+    "safeCaptionZoneStartsAtYPercent": 78,
+    "highPriorityMustBeCovered": true
+  },
+  "broll": {
+    "enabled": true,
+    "maxPer30Seconds": 3,
+    "minDuration": 0.8,
+    "maxDuration": 4.0,
+    "allowGraphicFallback": true,
+    "assetFolder": "public/broll"
+  },
+  "review": {
+    "enabled": true,
+    "visualFrames": 6,
+    "goal": "remove robotic edits, visual collisions, missed visual opportunities and gratuitous effects"
+  },
+  "avoid": [
+    "cut-every-silence",
+    "random-zooms",
+    "fixed-four-word-captions",
+    "effects-without-meaning",
+    "cutting-phonemes",
+    "caption-motion-collision",
+    "broll-that-only-repeats-the-spoken-words",
+    "ignoring-explicit-show-this-or-put-it-here-requests",
+    "placing-brand-assets-over-face-or-captions"
+  ]
+}

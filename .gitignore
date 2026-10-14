@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+output/*
+public/input.mp4
+inbox/*
+!output/.gitkeep
+!inbox/.gitkeep

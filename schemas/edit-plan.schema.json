@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fps",
+    "width",
+    "height",
+    "segments",
+    "captions",
+    "motions",
+    "overlays",
+    "broll",
+    "visuals"
+  ],
+  "properties": {
+    "fps": {
+      "type": "number",
+      "enum": [
+        30
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "enum": [
+        1080
+      ]
+    },
+    "height": {
+      "type": "integer",
+      "enum": [
+        1920
+      ]
+    },
+    "segments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourceStart",
+          "sourceEnd",
+          "zoom",
+          "zoomTo",
+          "reason"
+        ],
+        "properties": {
+          "sourceStart": {
+            "type": "number",
+            "minimum": 0
+          },
+          "sourceEnd": {
+            "type": "number",
+            "minimum": 0
+          },
+          "zoom": {
+            "type": "number",
+            "minimum": 0.95,
+            "maximum": 1.25
+          },
+          "zoomTo": {
+            "type": "number",
+            "minimum": 0.95,
+            "maximum": 1.25
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "captions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "duration",
+          "text",
+          "highlight"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "text": {
+            "type": "string"
+          },
+          "highlight": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "motions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "duration",
+          "type",
+          "text",
+          "subtext",
+          "position"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "headline",
+              "tag",
+              "quote",
+              "number",
+              "callout",
+              "steps",
+              "comparison"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "subtext": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string",
+            "enum": [
+              "top",
+              "center",
+              "bottom"
+            ]
+          }
+        }
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "duration",
+          "text",
+          "position"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "text": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string",
+            "enum": [
+              "top",
+              "center",
+              "bottom"
+            ]
+          }
+        }
+      }
+    },
+    "broll": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "duration",
+          "type",
+          "asset",
+          "text",
+          "subtext",
+          "layout",
+          "reason"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "graphic",
+              "image",
+              "video"
+            ]
+          },
+          "asset": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "subtext": {
+            "type": "string"
+          },
+          "layout": {
+            "type": "string",
+            "enum": [
+              "full",
+              "card",
+              "split"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "visuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "duration",
+          "type",
+          "text",
+          "asset",
+          "x",
+          "y",
+          "scale",
+          "enter",
+          "reason"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "brand",
+              "badge",
+              "icon",
+              "arrow",
+              "circle",
+              "label"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "asset": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number",
+            "minimum": 5,
+            "maximum": 95
+          },
+          "y": {
+            "type": "number",
+            "minimum": 5,
+            "maximum": 88
+          },
+          "scale": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 1.6
+          },
+          "enter": {
+            "type": "string",
+            "enum": [
+              "pop",
+              "fade",
+              "slide",
+              "bounce"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

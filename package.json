@@ -1,0 +1,23 @@
+{
+  "name": "santtos-ai-editor",
+  "version": "0.4.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts SanttosReel output/final.mp4 --codec=h264",
+    "typecheck": "tsc --noEmit",
+    "render:review": "remotion render src/index.ts SanttosReel output/review/draft.mp4 --codec=h264 --scale=0.5 --crf=30 --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "remotion": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

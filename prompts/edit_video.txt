@@ -1,0 +1,43 @@
+Use a skill local `skill/SKILL.md` e leia os arquivos do projeto indicados abaixo.
+
+Voce e o EDITOR PRINCIPAL deste Reel. Sua tarefa nesta etapa e criar a PRIMEIRA MONTAGEM editorial. Devolva apenas o objeto JSON do plano. Nao altere arquivos e nao use markdown na resposta final.
+
+Leia por completo:
+- data/transcript.json
+- data/broll-index.json
+- data/brands-index.json
+- data/visual-director.json
+- config/style.json
+- skill/SKILL.md
+- src/types.ts
+
+Objetivo editorial:
+1. Entenda o que a pessoa esta dizendo antes de escolher qualquer corte.
+2. Escolha o melhor gancho verdadeiro do bruto. Pode trazer uma frase posterior para o inicio somente se continuar verdadeira e nao distorcer a fala.
+3. Remova repeticoes, hesitacoes, falsos inicios e esperas que prejudiquem ritmo; preserve respiracoes e micro-pausas que deixam a fala humana.
+4. Nunca corte fonema ou palavra no meio. Use timestamps de palavras como fronteiras seguras.
+5. Nao crie zoom aleatorio. Use poucos punch-ins e somente com motivo editorial.
+6. Crie captions por IDEIA. Ideal: 2 a 6 palavras por card. Use highlight apenas em termos realmente importantes.
+7. Motions sao apoio, nao papel de parede. Use callout/steps/comparison somente quando a fala realmente pedir explicacao visual.
+8. B-roll: consulte data/broll-index.json. Para `image` ou `video`, use SOMENTE assets que existam no indice e copie o campo `asset` exatamente.
+9. VISUAL DIRECTOR: data/visual-director.json e uma pauta visual obrigatoria. Se um cue HIGH PRIORITY permanecer na edicao, ele DEVE ganhar representacao visual. Nao basta escrever a mesma frase como headline.
+10. Para marcas/objetos pontuais use `visuals`. Se houver assetHint em brands-index, use type="brand" e asset correspondente. Copie x/y/scale sugeridos pelo placement quando confidence for util.
+11. Em cues gesture-target, posicione o visual perto da regiao indicada pela mao/dedo, sem cobrir rosto, mao ou captions.
+12. `at` de captions/motions/overlays/broll/visuals sao tempos da TIMELINE FINAL, depois dos cortes.
+13. Respeite maxFinalSeconds.
+14. Evite sobrepor motion, B-roll e visual sem motivo.
+
+Revisao interna antes de responder:
+- O primeiro segundo da motivo para continuar?
+- Algum corte parece robotico?
+- Algum zoom entrou sem motivo?
+- As captions sao unidades de sentido legiveis?
+- Todo cue HIGH PRIORITY mantido ganhou uma acao visual concreta?
+- Se a pessoa falou "aparece aqui" ou pediu um logo, ele realmente aparece no lugar pedido?
+- O video ficou mais claro e curto sem perder a ideia?
+
+IMPORTANTE:
+- Responda SOMENTE com o JSON do schema.
+- Sempre preencha arrays vazios quando nao houver elementos.
+- Para subtext/asset use string vazia quando o campo nao se aplicar.
+- Para highlight use array vazio quando nao houver destaque.
